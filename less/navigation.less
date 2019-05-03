@@ -7,28 +7,57 @@ nav {
     align-items: center;
     flex-flow: wrap; 
     border-bottom: 2px dashed @navigation-border;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     width:70%;
 
-    h1 {
-        padding-left: 64px;
-    }
+
+
     div {
         display: flex;
         width: 35%;
         margin-right: 70px;
-        justify-content: end;
+        justify-content: space-around;
     }
     a{
         width: 40%;
         line-height: 1.5;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        font-weight: 600;
         text-decoration: none;
-        font-family: 'Roboto', sans-serif;    }
+        font-family: 'Roboto', sans-serif;    
+    }
 }
 
 
 
 
 
-
+.navagation {
+    @media @mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 97%;
+       h1{
+          display: inline;
+          margin: 0 auto;
+          text-align: center
+          
+          }
+      div{
+          display: flex;
+          margin: 0 auto;
+          width: 100%;
+          justify-content: center;
+          a{
+            display: flex;
+            margin: 0 auto;
+            width: 100%;
+            justify-content: center;
+          }
+      }
+    }
+   
+  }
